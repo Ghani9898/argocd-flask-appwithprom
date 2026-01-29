@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/Ghani9898/argocd-flask-appwithprom.git'
     targetRevision: HEAD
-    path: prometheus
+    path: '.'
     helm:
       valueFiles:
         - values.yaml
