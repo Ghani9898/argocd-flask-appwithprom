@@ -38,7 +38,7 @@ jobs:
           DOCKER_BUILDKIT: 1
         run: |
           IMAGE_TAG=${GITHUB_SHA::7}
-          docker build -t ghani9898/flask-app:$IMAGE_TAG ./flask-app-code
+          docker build --no-cache -t ghani9898/flask-app:$IMAGE_TAG ./flask-app-code
           docker push ghani9898/flask-app:$IMAGE_TAG
           echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
 
