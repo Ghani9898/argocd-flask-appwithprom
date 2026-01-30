@@ -8,7 +8,7 @@ replicaCount: 1
 # -------------------------------
 image:
   repository: ghani9898/flask-app
-  tag: d98927f
+  tag: 110c706
   pullPolicy: IfNotPresent
 
 # -------------------------------
