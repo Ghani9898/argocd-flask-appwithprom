@@ -44,8 +44,8 @@ jobs:
       # 5️⃣ Commit and Push updated values.yaml
       - name: Commit and Push updated values.yaml
         run: |
-          git config user.name "Ghani9898"
-          git config user.email "98a.ghani@gmail.com"
+          git config user.name "Github Actions"
+          git config user.email "actions@github.com"
           git add values.yaml
           git commit -m "ci: update image tag to ${IMAGE_TAG}" || echo "No changes"
           git push
