@@ -1,5 +1,6 @@
 # Use official Python image
-FROM python:3.11-slim@sha256:89abad2fb0c3633705054018ae09caae4bd0e0febf57fb57a96fd41769c94e12
+FROM ghcr.io/library/python:3.11-slim
+
 
 
 # Set working directory
