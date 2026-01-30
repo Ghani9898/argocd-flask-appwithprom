@@ -15,7 +15,7 @@ app.wsgi_app = DispatcherMiddleware(app.wsgi_app, {
 @app.route('/')
 def home():
     REQUEST_COUNT.inc()
-    return "Hello, Flask!"
+    return "Hello, Ghanibhai!"
 
 @app.route('/health')
 def health():
