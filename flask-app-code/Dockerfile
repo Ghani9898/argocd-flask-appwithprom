@@ -1,7 +1,5 @@
-# Use official Python image
-FROM ghcr.io/library/python:3.11-slim
-
-
+# Use official Python image from Docker Hub
+FROM python:3.11-slim
 
 # Set working directory
 WORKDIR /app
