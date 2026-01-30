@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
@@ -34,8 +36,8 @@ jobs:
 
       - name: Commit and Push updated values.yaml
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "Ghani9898"
+          git config user.email "98a.ghani@gmail.com"
           git add values.yaml
           git commit -m "ci: update image tag to ${IMAGE_TAG}"
           git push
